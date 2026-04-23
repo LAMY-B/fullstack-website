@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import Contact from "./components/contact";
+import Contact from "./components/Contact"
 import Home from "./components/home";
 import About from "./components/about";
 import UserProfile from "./components/UserProfile";
