@@ -10,16 +10,24 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://my-website-prdg.onrender.com/users/login", {
+      const res = await axios.post("https://my-website-prdg.onrender.com/users/login", {
         email,
         password,
       });
+      localStorage.setItem("token", res.data) // item name and item value
       setSuccessful("Login successful");
     } catch (err) {
       console.error(err.message);
       setError(err.message);
     }
   };
+
+
+  // localstorage: System storage
+  // sessionstorage: session of your tab
+  // cookie: your web storage
+
+
 
   return (
     <div>
