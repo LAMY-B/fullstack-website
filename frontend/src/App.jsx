@@ -2,12 +2,12 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Contact from "./components/Contact"
-import Home from "./components/home";
-import About from "./components/about";
+import Home from "./components/Home";
+import About from "./components/About";
 import UserProfile from "./components/UserProfile";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
-import Login from "./components/Login"
+import Login from "./components/Login";
 
 function App() {
   return (
